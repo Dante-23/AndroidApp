@@ -22,4 +22,10 @@ interface UserDao {
 
     @Query("SELECT * FROM user_info")
     fun getAllUsers() : List<User>
+
+    @Query("SELECT * FROM user_info WHERE email LIKE :pemail")
+    suspend fun getUserHavingEmail(pemail: String) : List<User>
+
+    @Query("SELECT * FROM user_info WHERE email LIKE :username")
+    suspend fun getUserHavingUsername(username: String) : List<User>
 }

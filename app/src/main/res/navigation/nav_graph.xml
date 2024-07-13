@@ -14,8 +14,8 @@
             android:id="@+id/action_loginFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
         <action
-            android:id="@+id/action_loginFragment_to_registerFragment"
-            app:destination="@id/registerFragment" />
+            android:id="@+id/action_loginFragment_to_todoFragment"
+            app:destination="@id/todoFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_registerFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_todoFragment"
+            app:destination="@id/todoFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
@@ -39,4 +42,18 @@
             app:popUpTo="@id/registerFragment"
             app:popUpToInclusive="true" />
     </fragment>
+    <fragment
+        android:id="@+id/todoFragment"
+        android:name="com.example.authapp.TodoFragment"
+        android:label="fragment_todo"
+        tools:layout="@layout/fragment_todo" >
+        <action
+            android:id="@+id/action_todoFragment_to_todoDialogFragment"
+            app:destination="@id/todoDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todoDialogFragment"
+        android:name="com.example.authapp.TodoDialogFragment"
+        android:label="fragment_todo_dialog"
+        tools:layout="@layout/fragment_todo_dialog" />
 </navigation>

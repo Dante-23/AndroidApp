@@ -6,7 +6,7 @@
     <string name="txt_register_header">Create New Account</string>
     <string name="txt_register_subheader">Please provide all the required information</string>
     <string name="txt_username">Username</string>
-    <string name="txt_username_hint">cheezycode</string>
+    <string name="txt_username_hint">elonmusk</string>
     <string name="txt_email">Email</string>
     <string name="txt_email_hint">cheezycode@gmail.com</string>
     <string name="txt_password">Password</string>
@@ -23,4 +23,5 @@
     <string name="txt_description_hint">Write your description</string>
     <string name="txt_submit">Submit</string>
     <string name="add_note">Add Note</string>
+    <string name="type_your_task">Type your task .....</string>
 </resources>
